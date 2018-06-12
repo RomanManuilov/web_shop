@@ -1,0 +1,13 @@
+extends layout/layout
+
+block content
+    div.settings_container
+        div.settings_block_menu
+            ul.settings_menu
+                li.settings_menu__item
+                    a.settings_item__link(href="#") Добавить товар
+                li.settings_menu__item
+                    a.settings_item__link#database(href="/database") Показать базу
+        div.settings_block_content#content
+            include layout/addGoods
+            include layout/database

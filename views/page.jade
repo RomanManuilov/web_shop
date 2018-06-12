@@ -1,0 +1,40 @@
+extends layout/layout
+
+block content
+    include layout/header
+    include layout/menu
+    div.shop_block_menu
+        ul.shop_menu
+            li.shop_menu__item
+                a.shop_menu__link(href="#") All
+            li.shop_menu__item
+                a.shop_menu__link(href="#") WINTER
+            li.shop_menu__item
+                a.shop_menu__link(href="#") OUTDOOR
+            li.shop_menu__item
+                a.shop_menu__link(href="#") URBAN
+    div.shop_block_content
+        if (!goods)
+            h2.database_mess_clean No product
+        else
+            each goodsItem in goods
+                div.page_cpntainer
+                    div.page_block_image
+                        img.page_block__img(src="/images/#{goodsItem.src}")
+                    div.page_block_content
+                        div.page_block
+                            h3.page_name #{goodsItem.name}
+                            h4.page_price #{goodsItem.price} $
+                            p.page_description #{goodsItem.description}
+                            p.page_size Выбрать размер:
+                            form.page_form
+                                p.page_form__item S
+                                    input(type="radio" name="size" value="s" checked)
+                                p.page_form__item M
+                                    input(type="radio" name="size" value="m")
+                                p.page_form__item L
+                                    input(type="radio" name="size" value="l" )
+                                p.page_form__item Xll
+                                    input(type="radio" name="size" value="xll")
+                            div.page_btn
+                                div.page_btn__link(id="#{goodsItem._id}" onclick="addCart()") В корзину

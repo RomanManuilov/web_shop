@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    h2.database_name Database Goods
+        if (!goods)
+            h2.database_mess_clean Database is empty
+        else
+            table
+                each goodsItem in goods
+                    tr
+                        td(style="text-align:center; width:7%") #{goodsItem.name}
+                        td(style="text-align:center; width:7%") #{goodsItem.price}
+                        td(style="text-align:center; width:7%") #{goodsItem.categories}
+                        td(style="width: '70%'") #{goodsItem.description}
+                        td(style="text-align:center; width:10%")
+                            img.database_goods__img(src="/images/#{goodsItem.src}")
+                        td(style="text-align:center;")
+                            form(action="/#{goodsItem._id}" method="POST")
+                                input.database__btn(type="submit", value="Удалить")
+                    tr
+                        form(action="/update/#{goodsItem._id}" method="POST")
+                            td
+                                input(type="text" name="name" size="10")
+                            td
+                                input(type="text" name="price" size="10")
+                            td
+                                input(type="text" name="categories" size="10")
+                            td
+                                textarea(type="text" rows="1" cols="45" name="description" size="50")
+                            td
+                                input(type="text" name="src" placeholder="01.jpg")
+                            td(style="text-align:center;")
+                                input.database__btn(type="submit", value="Обновить")

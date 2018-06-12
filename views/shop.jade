@@ -1,0 +1,39 @@
+extends layout/layout
+
+block content
+    include layout/header
+    include layout/menu
+    div.shop_container
+            div.shop_block_menu
+                ul.shop_menu
+                    li.shop_menu__item
+                        a.shop_menu__link(href="#") All
+                    li.shop_menu__item
+                        a.shop_menu__link(href="#") WINTER
+                    li.shop_menu__item
+                        a.shop_menu__link(href="#") OUTDOOR
+                     li.shop_menu__item
+                        a.shop_menu__link(href="#") URBAN
+            div.shop_block_content
+                if (!goods)
+                    h2.database_mess_clean No product
+                else
+                    each goodsItem in goods
+                        div.shop_goods_container
+                            div.goods_bg(style="background-image: url(/images/#{goodsItem.src})")
+                                div.goods_bg_rgba
+                                    div.goods_sale sale
+                                        div.goods_control
+                                            div.goods_control_item
+                                                a.goods_control__link(href="/more/#{goodsItem._id}")
+                                                    img.goods_control__img(src="/images/eye.png")
+                                            div.goods_control_item
+                                                a.goods_control__link(href="#")
+                                                    img.goods_control__img(src="/images/heart.png")
+                                            div.goods_control_item
+                                                a.goods_control__link(href="#")
+                                                    img.goods_control__img(src="/images/cart.png")
+                            div.goods_main
+                                h3.goods_main__name #{goodsItem.name}
+                                h4.goods_main__price #{goodsItem.price}$
+                            div.goods_description #{goodsItem.categories}

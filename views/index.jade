@@ -1,0 +1,19 @@
+extends layout/layout
+
+block content
+    include layout/header
+    include layout/menu
+    include layout/slaider
+
+    div.categories_container
+        ul.categories
+            li.categories_item
+                a.categories_item__link(href="#") ALL
+            li.categories_item
+                a.categories_item__link(href="#") WINTER
+            li.categories_item
+                a.categories_item__link(href="#") OUTDOOR
+            li.categories_item
+                a.categories_item__link(href="#") URBAN
+            li.categories_item
+                a.categories_item__link(href="#") SNEAKERS

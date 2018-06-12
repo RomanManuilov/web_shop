@@ -1,0 +1,17 @@
+
+block content
+    div.addGoods_container
+        form.addGoods_form(action="/add" method="POST")
+            h2.addGoods_form__name Добавить товар в базу
+            p.addGoods_form__description Название товара
+            input.addGoods_form__input(type="text" name="name")
+            p.addGoods_form__description Цена товара
+            input.addGoods_form__input(type="text" name="price")
+            p.addGoods_form__description Категория товара
+            input.addGoods_form__input(type="text" name="categories")
+            p.addGoods_form__description Описание товара
+            input.addGoods_form__input(type="text" name="description")
+            p.addGoods_form__description Имя картики товара
+            input.addGoods_form__input(input type="text" name="src" placeholder="01.jpg")
+            br
+            input.addGoods_form__btn(type="submit", value="Добавить")

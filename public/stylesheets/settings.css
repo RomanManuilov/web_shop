@@ -1,0 +1,105 @@
+body, html{
+    width: 100%;
+    height: 100%;;
+    margin: 0;
+    padding: 0;
+
+}
+.settings_container{
+    background: #000;
+}
+.settings_block_menu{
+    display: inline-block;
+    width: 15%;
+    vertical-align: top;
+    background: #000;
+    min-height: 100%;
+}
+.settings_block_content{
+    display: inline-block;
+    width: 85%;
+    background: #ffffff;
+    min-height: 100%;
+}
+.settings_menu{
+    list-style-type: none;
+}
+.settings_menu__item{
+    padding: 10px 0px;
+}
+.settings_item__link{
+    font-family: "Montserrat";
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+
+.addGoods_container{
+    width: 100%;
+}
+.addGoods_form{
+    width: 40%;
+    margin: 20px;
+}
+.addGoods_form__name{
+    font-family: "Montserrat";
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.addGoods_form__description{
+    font-family: "Montserrat";
+    color: black;
+    font-size: 0.8em;
+    padding: 10px 0px;
+    margin: 0;
+}
+.addGoods_form__input{}
+.addGoods_form__btn{
+    font-family: "Montserrat";
+    color: black;
+    font-size: 0.8em;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+.database_name{
+    font-family: "Montserrat";
+    color: black;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+}
+table{
+    margin: 15px;
+}
+td{
+    font-family: "Montserrat";
+    color: black;
+    font-weight: bold;
+    font-size: 0.6em;
+    background: #E2E2E2;
+    padding: 5px;
+    text-align: left;
+}
+.database__btn{
+    font-family: "Montserrat";
+    color: black;
+    font-size: 0.8em;
+    padding: 5px;
+    margin: 5px 0px;
+    width: 100px;
+    text-align: center;
+}
+.database_mess_clean{
+    font-family: "Montserrat";
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 15px;
+}
+.database_goods__img{
+    width: 60px;
+}
