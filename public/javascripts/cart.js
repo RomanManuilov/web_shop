@@ -1,19 +1,13 @@
-var idGood ="";
+$(document).ready(function() {
+    $('.page_btn__link').click(function () {
+        let name = $(this).attr('id');
+        /*$.cookie(name, name, {
+            path: '/'
+        });*/
+        $.cookie('5b1f780baa176618e4b175d1', null);
+       /* let test = $.cookie(name);
+        console.log(test);
+        $('.cart_container').attr("id", '1');*/
+    });
 
-function addCart() {
-    idGood = $('.page_btn__link').attr('id');
-    localStorage.setItem(idGood, idGood);
-
- console.log(idGood)
-    showCart(idGood);
-}
-function showCart(idShow){
-    var idCart = $('cart');
-    var idShow = localStorage.getItem(idShow)
-    var div = document.createElement('div');
-    div.className = "cart_item";
-    div.id = idShow
-    idCart.append(div);
-    console.log(idShow)
-}
-showCart();
+});

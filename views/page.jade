@@ -24,7 +24,7 @@ block content
                     div.page_block_content
                         div.page_block
                             h3.page_name #{goodsItem.name}
-                            h4.page_price #{goodsItem.price} $
+                            h4.page_price #{goodsItem.price} грн
                             p.page_description #{goodsItem.description}
                             p.page_size Выбрать размер:
                             form.page_form
@@ -37,4 +37,4 @@ block content
                                 p.page_form__item Xll
                                     input(type="radio" name="size" value="xll")
                             div.page_btn
-                                div.page_btn__link(id="#{goodsItem._id}" onclick="addCart()") В корзину
+                                div.page_btn__link(id="#{goodsItem._id}") В корзину
