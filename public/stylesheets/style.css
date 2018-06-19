@@ -257,7 +257,6 @@ menu categories index.jade*/
 }
 
 /*page.jade*/
-
 .page_container{
     width: 100%;
 }
@@ -303,4 +302,20 @@ menu categories index.jade*/
 }
 .page_btn__link:hover{
     background: #000;
+}
+/*cart.jade */
+.cart_container{
+    width: 60%;
+    margin: 50px auto;
+    font-family: "Montserrat";
+    font-size: 15pt;
+    display: flex;
+    align-items: center;
+}
+.cart_item{
+    margin-right: 25px;
+}
+.cart_img{
+    width: 60px;
+    height: 80px;
 }
