@@ -309,13 +309,33 @@ menu categories index.jade*/
     margin: 50px auto;
     font-family: "Montserrat";
     font-size: 15pt;
+
+}
+.cart{
     display: flex;
     align-items: center;
 }
 .cart_item{
     margin-right: 25px;
+    width: 15%;
 }
 .cart_img{
     width: 60px;
     height: 80px;
+}
+/*messanger_container*/
+.message_container{
+background: rgba(0,0,0,0.5);
+}
+.message{
+    width: 30%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 15pt;
+}
+.massage_name{
+
 }

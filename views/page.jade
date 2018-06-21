@@ -18,7 +18,7 @@ block content
             h2.database_mess_clean No product
         else
             each goodsItem in goods
-                div.page_cpntainer
+                div.page_container
                     div.page_block_image
                         img.page_block__img(src="/images/#{goodsItem.src}")
                     div.page_block_content
@@ -38,3 +38,4 @@ block content
                                     input(type="radio" name="size" value="xll")
                             div.page_btn
                                 div.page_btn__link(id="#{goodsItem._id}") В корзину
+    div.message_container
