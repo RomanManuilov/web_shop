@@ -335,6 +335,11 @@ background: rgba(0,0,0,0.5);
     text-align: center;
     font-family: "Montserrat";
     font-size: 15pt;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px black;
 }
 .massage_name{
 

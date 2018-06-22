@@ -1,5 +1,3 @@
-//let mess = require('message.js');
-
 $(document).ready(function () {
     let basket = "basket";
     // создаем объект по клиек, достем "название","цена","путь картики"
@@ -56,6 +54,6 @@ $(document).ready(function () {
     }
     function mess (str) {
         let message = '<div class="message"><div class="massage_name">' + str + '</div></div>'
-        $('.message_container').css({'position':'fixed','top':'0','min-width':'100%','min-height':'100%','background':'rgba(0,0,0,0.5)','align-items':'center'}).append(message);
+        $('.message_container').css({'position':'fixed','top':'0','min-width':'100%','min-height':'100%','background':'rgba(0,0,0,0.5)','align-items':'center','display':'flex'}).append(message);
     }
 });
