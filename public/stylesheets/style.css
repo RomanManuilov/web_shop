@@ -28,6 +28,7 @@ header basket with menu index.jade*/
     vertical-align: middle;
     width: 35px;
     height: 35px;
+    transform: none;
 }
 .basket_current{
     font-family: "Montserrat";
@@ -306,19 +307,24 @@ menu categories index.jade*/
 }
 /*cart.jade */
 .cart_container{
-    width: 60%;
+    width: 40%;
     margin: 50px auto;
     font-family: "Montserrat";
     font-size: 15pt;
-
 }
 .cart{
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ccc;
 }
 .cart_item{
-    margin-right: 25px;
-    width: 15%;
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+}
+.cart_item__name{
+    text-decoration: none;
+    color: black;
 }
 .cart_img{
     width: 60px;
@@ -327,6 +333,10 @@ menu categories index.jade*/
 .cart_item__del{
     padding: 10px;
     cursor: pointer;
+}
+.cart_sum{
+    margin-top: 15px;
+    text-align: right;
 }
 /*messanger_container*/
 .message_container{
