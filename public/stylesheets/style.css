@@ -299,6 +299,7 @@ menu categories index.jade*/
     display: block;
     padding: 15px;
     background: #E06D39;
+    cursor: pointer;
 }
 .page_btn__link:hover{
     background: #000;
@@ -323,24 +324,49 @@ menu categories index.jade*/
     width: 60px;
     height: 80px;
 }
+.cart_item__del{
+    padding: 10px;
+    cursor: pointer;
+}
 /*messanger_container*/
 .message_container{
-background: rgba(0,0,0,0.5);
+    opacity: 0.0;
 }
-.message{
+.message_nav{
     width: 30%;
     margin: 0 auto;
+    padding: 50px;
+    position: relative;
+}
+.message{
     background: #fff;
     padding: 15px;
     text-align: center;
-    font-family: "Montserrat";
-    font-size: 15pt;
     height: 100px;
     align-items: center;
     display: flex;
     justify-content: center;
-    box-shadow: 1px 1px black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
-.massage_name{
-
+.message_name{
+    font-size: 15pt;
+    font-family: "Montserrat";
+}
+.message_nav__close{
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    font-size: 14pt;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
