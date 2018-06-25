@@ -23,17 +23,19 @@ block content
                             div.goods_bg(style="background-image: url(/images/#{goodsItem.src})")
                                 div.goods_bg_rgba
                                     div.goods_sale sale
+                                        a.goods_link(href="/more/#{goodsItem._id}")
                                         div.goods_control
                                             div.goods_control_item
                                                 a.goods_control__link(href="/more/#{goodsItem._id}")
                                                     img.goods_control__img(src="/images/eye.png")
                                             div.goods_control_item
-                                                a.goods_control__link(href="#")
-                                                    img.goods_control__img(src="/images/heart.png")
+                                                 a.goods_control__link(href="#")
+                                                     img.goods_control__img(src="/images/heart.png")
                                             div.goods_control_item
-                                                a.goods_control__link(href="#")
-                                                    img.goods_control__img(src="/images/cart.png")
+                                                 a.goods_control__link(href="#")
+                                                     img.goods_control__img(src="/images/cart.png")
                             div.goods_main
-                                h3.goods_main__name #{goodsItem.name}
-                                h4.goods_main__price #{goodsItem.price}грн
+                                 h3.goods_main__name #{goodsItem.name}
+                                 h4.goods_main__price #{goodsItem.price}грн
                             div.goods_description #{goodsItem.categories}
+

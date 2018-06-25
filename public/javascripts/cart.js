@@ -12,8 +12,7 @@ $(document).ready(function () {
                 price: priceGood,
                 img: imgGood,
                 urlGoods: urlGoods,
-            }
-        ;
+            };
         createCookie(obj);
     });
 
@@ -45,11 +44,10 @@ $(document).ready(function () {
                 });
             }
         }
-
     }
 
     function getCookie() {
-        return $.cookie(basket)
+        return $.cookie(basket);
     }
 
     showGoodsOnPage();
@@ -58,10 +56,10 @@ $(document).ready(function () {
         let showElemPageCart = JSON.parse(getCookie());
         $('.basket_current').text(showElemPageCart.length);
         if(showElemPageCart.length === 0){
-            $('.cart_container').append('<div class="cart_empty">Ваша карзина пуста.</div>')
+            $('.cart_box').append('<div class="cart_empty">Ваша карзина пуста.</div>');
         } else {
             for (let item of showElemPageCart) {
-                $('.cart_container').append('<div class="cart"><div class="cart_item"><a class="cart_item__name" href="' + item.urlGoods + '">' + item.name + '</a></div>'
+                $('.cart_box').append('<div class="cart"><div class="cart_item"><a class="cart_item__name" href="' + item.urlGoods + '">' + item.name + '</a></div>'
                     + '<div class="cart_item"><div class="cart_item__price">' + item.price + '</div></div>' + '<div class="cart_item"><img src="' + item.img +
                     '" class="cart_img"></div><div class="cart_item"><div class="cart_item__del">&#10006;</div></div></div>');
             }
@@ -90,12 +88,12 @@ $(document).ready(function () {
         for (let item of arrObjGetCookie) {
             result += parseInt(item.price.replace(/грн/g, ''));
         }
-        return '<div class="cart_sum__name">' + 'Общая сумма: ' + result + ' грн' + '</div>';
+        $('.cart_sum').append('<div class="cart_sum__name">' + 'Общая сумма: ' + result + ' грн' + '</div>');
     }
 
     function mess(str) {
-        let message = '<div class="message_nav"><div class="message_nav__close">&#10006;</div><div class="message"><div class="message_name">' + str + '</div></div></div>'
-        $('.message_container').css({
+        let message = '<div class="message_nav"><div class="message_nav__close">&#10006;</div><div class="message"><div class="message_name">' + str + '</div></div></div>';
+        $('.cart_box').css({
             'position': 'fixed',
             'top': '0',
             'min-width': '100%',
