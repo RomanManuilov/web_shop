@@ -53,7 +53,6 @@ router.get('/settings', function(req, res, next) {
             return res.sendStatus(500);
         }else if(result.length){
             res.render('settings',{"goods" : result});
-            console.log(result.length);
         } else{
             res.render('settings');
         }
@@ -72,7 +71,6 @@ router.post('/add', function(req, res) {
             console.log(err);
             return res.sendStatus(500);
         }
-        console.log(result);
         res.redirect('/settings');
     });
 });

@@ -38,13 +38,14 @@ body, html{
 
 .addGoods_container{
     width: 100%;
+    display: flex;
+    font-family: "Montserrat";
 }
 .addGoods_form{
     width: 40%;
     margin: 20px;
 }
 .addGoods_form__name{
-    font-family: "Montserrat";
     color: black;
     font-weight: bold;
     font-size: 1.2em;
@@ -64,6 +65,18 @@ body, html{
     padding: 5px;
     margin: 10px 0px;
 }
+
+.statGoods_container{
+   width: 60%;
+   margin: 20px;
+}
+.statGoods_container__name{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
 
 .database_name{
     font-family: "Montserrat";

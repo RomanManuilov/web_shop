@@ -93,7 +93,7 @@ $(document).ready(function () {
 
     function mess(str) {
         let message = '<div class="message_nav"><div class="message_nav__close">&#10006;</div><div class="message"><div class="message_name">' + str + '</div></div></div>';
-        $('.cart_box').css({
+        $('.message_container').css({
             'position': 'fixed',
             'top': '0',
             'min-width': '100%',
@@ -103,6 +103,7 @@ $(document).ready(function () {
         })
             .animate({opacity: 1}, 400)
             .append(message);
+        console.log('mess working')
     }
 
     $('.message_container').click(function () {

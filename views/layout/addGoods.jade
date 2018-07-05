@@ -15,3 +15,14 @@ block content
             input.addGoods_form__input(input type="text" name="src" placeholder="01.jpg")
             br
             input.addGoods_form__btn(type="submit", value="Добавить")
+        div.statGoods_container
+            h2.statGoods_container__name Статистика по базе данных:
+            if (!goods)
+                p.statGoods_container__quantity Общее количество товара на сайте: 0;
+            else
+                p.statGoods_container__quantity Общее количество товара на сайте: #{goods.length}
+                each item in goods
+                    script.
+                     - console.log(#{item.categories})
+
+

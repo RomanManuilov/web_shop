@@ -171,6 +171,7 @@ menu categories index.jade*/
 }
 .goods_link{
     width: 100%;
+    display: block;
 }
 .goods_bg{
     width: 100%;
