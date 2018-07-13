@@ -314,6 +314,9 @@ menu categories index.jade*/
     background: #000;
 }
 /*cart.jade */
+{
+    border: 1px solid red;
+}
 .cart_container{
     width: 70%;
     font-family: "Montserrat";
@@ -322,7 +325,7 @@ menu categories index.jade*/
     display: flex;
 }
 .cart_box{
-    width: 50%;
+    width: 100%;
 }
 
 .cart{
@@ -331,7 +334,6 @@ menu categories index.jade*/
     border-bottom: 1px solid #ccc;
 }
 .cart_item{
-
     margin: 0 auto;
     text-align: center;
 }
@@ -349,8 +351,15 @@ menu categories index.jade*/
 }
 .cart_sum{
     margin-left: 50px;
-    width: 35%;
+    width: 50%;
     bottom: 0;
+}
+.cart_sum__name{
+    padding-top: 15px;
+    text-align: center;
+}
+.cart_empty{
+    text-align: center;
 }
 /*messanger_container*/
 .message_container{

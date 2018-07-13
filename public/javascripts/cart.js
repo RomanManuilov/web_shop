@@ -88,7 +88,9 @@ $(document).ready(function () {
         for (let item of arrObjGetCookie) {
             result += parseInt(item.price.replace(/грн/g, ''));
         }
-        $('.cart_sum').append('<div class="cart_sum__name">' + 'Общая сумма: ' + result + ' грн' + '</div>');
+        $('.cart_box').append('<div class="cart_sum__name">' + 'Общая сумма: ' + result + ' грн' + '</div>');
+
+        result === 0 ? $('.cart_sum').css('display','none') : $('.cart_sum').css('display','block');
     }
 
     function mess(str) {

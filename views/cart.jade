@@ -6,6 +6,19 @@ block content
     div.cart_container
         div.cart_box
         div.cart_sum
+           div.cart_oreder
+               form.addGoods_form(action="" method="POST")
+                   h2.addGoods_form__name Оформить заказ
+                   p.addGoods_form__description Имя Фамиля
+                   input.addGoods_form__input(type="text" name="name")
+                   p.addGoods_form__description Моб.телефон
+                   input.addGoods_form__input(type="text" name="price")
+                   p.addGoods_form__description Email
+                   input.addGoods_form__input(type="text" name="categories")
+                   p.addGoods_form__description Адрес отделения новой почты
+                   input.addGoods_form__input(type="text" name="description")
+                   br
+                   input.addGoods_form__btn(type="submit", value="Оформить заказ")
 
 
 

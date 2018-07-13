@@ -42,7 +42,7 @@ body, html{
     font-family: "Montserrat";
 }
 .addGoods_form{
-    width: 40%;
+    width: 100%;
     margin: 20px;
 }
 .addGoods_form__name{

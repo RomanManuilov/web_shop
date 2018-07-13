@@ -1,9 +1,9 @@
 extends layout
 
 block content
-    h2.database_name Database Goods
+    h2.database_name База товара
         if (!goods)
-            h2.database_mess_clean Database is empty
+            h2.database_mess_clean База пустая - "Добавтье товар"
         else
             table
                 each goodsItem in goods
@@ -28,6 +28,6 @@ block content
                             td
                                 textarea(type="text" rows="1" cols="45" name="description" size="50")
                             td
-                                input(type="text" name="src" placeholder="01.jpg")
+                                input(type="file" name="src")
                             td(style="text-align:center;")
                                 input.database__btn(type="submit", value="Обновить")
